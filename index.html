@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padma Hotel | Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Padma HOTEL.png" alt="Padma Hotel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="background-img"></div>
+        <div class="welcome-text">
+            <h1>Welcome to Heaven on Earth</h1>
+            <button id="aboutHotelButton">About Our Hotel</button>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Our Hotel</h2>
+        <p>Padma Hotel is a luxury resort offering a unique experience of elegance and comfort. Nestled in a serene environment, our hotel is the perfect getaway for those seeking tranquility and relaxation. We pride ourselves on providing world-class service and amenities to ensure our guests have an unforgettable stay. Enjoy our spacious rooms, gourmet dining, and a range of activities to rejuvenate your mind, body, and soul.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <h3>Deluxe Room</h3>
+            <img src="images/delux room.jpeg" alt="Deluxe Room">
+            <p>Experience luxury in our Deluxe Room with the following amenities:</p>
+            <ul>
+                <li>King-sized bed</li>
+                <li>Private balcony with stunning views</li>
+                <li>Mini-bar and coffee maker</li>
+                <li>High-speed Wi-Fi</li>
+                <li>Complimentary toiletries</li>
+                <li>24/7 room service</li>
+            </ul>
+        </div>
+        <div class="room">
+            <h3>Guest Room</h3>
+            <img src="images/guest room.jpeg" alt="Guest Room">
+            <p>Our Guest Room is perfect for a relaxing stay with these features:</p>
+            <ul>
+                <li>Queen-sized bed</li>
+                <li>Tea/Coffee maker</li>
+                <li>Flat-screen TV with cable channels</li>
+                <li>Free Wi-Fi</li>
+                <li>Work desk and chair</li>
+                <li>Daily housekeeping service</li>
+            </ul>
+        </div>
+        <div class="room">
+            <h3>Single Room</h3>
+            <img src="images/single room.jpeg" alt="Single Room">
+            <p>Ideal for solo travelers, our Single Room offers:</p>
+            <ul>
+                <li>Single bed</li>
+                <li>Work desk and lamp</li>
+                <li>Complimentary breakfast</li>
+                <li>High-speed Wi-Fi</li>
+                <li>Free local calls</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="facilities">
+        <h2>Our Facilities</h2>
+        <div class="facility">
+            <h3>Event Hall</h3>
+            <img src="images/event.jpeg" alt="Event Hall">
+            <p>Our spacious Event Hall is perfect for hosting weddings, conferences, and parties, equipped with state-of-the-art audio-visual systems.</p>
+        </div>
+        <div class="facility">
+            <h3>Gym</h3>
+            <img src="images/fitness.jpeg" alt="Gym">
+            <p>Stay fit during your stay with our fully-equipped gym, offering a range of equipment and personal training sessions.</p>
+        </div>
+        <div class="facility">
+            <h3>Cafe</h3>
+            <img src="images/resturant.jpeg" alt="Cafe">
+            <p>Relax and enjoy a variety of beverages and snacks at our cozy cafe, the perfect spot to unwind.</p>
+        </div>
+        <div class="facility">
+            <h3>Swimming Pool</h3>
+            <img src="images/swimming.jpeg" alt="Swimming Pool">
+            <p>Take a dip in our beautiful swimming pool, surrounded by lush greenery, ideal for relaxation and fun.</p>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Booking</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="roomType">Room Type:</label>
+            <select id="roomType" name="roomType">
+                <option value="deluxe">Deluxe Room</option>
+                <option value="guest">Guest Room</option>
+                <option value="single">Single Room</option>
+            </select>
+            
+            <label for="checkIn">Check-In Date:</label>
+            <input type="date" id="checkIn" name="checkIn" required>
+            
+            <label for="checkOut">Check-Out Date:</label>
+            <input type="date" id="checkOut" name="checkOut" required>
+            
+            <label for="adults">Number of Adults:</label>
+            <input type="number" id="adults" name="adults" min="1" required>
+            
+            <label for="children">Number of Children:</label>
+            <input type="number" id="children" name="children" min="0">
+            
+            <label for="additionalRequests">Additional Requests:</label>
+            <textarea id="additionalRequests" name="additionalRequests"></textarea>
+            
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to contact us.</p>
+        <div class="contact-details">
+            <p>Email: contact@padmahotel.com</p>
+            <p>Phone: 01345678</p>
+            <p>Address: Bagbazar Road,Kathmandu,Nepal</p>
+        </div>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4363693062486!2d85.32411231510159!3d27.71108533288175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19124a01bfb3%3A0x1dbb3a9d2082dc82!2sHotel%20Yak%20%26%20Yeti!5e0!3m2!1sen!2snp!4v1678902954387!5m2!1sen!2snp" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    
+        <footer>
+            <p>&copy; 2024 Padma Hotel. All Rights Reserved.</p>
+        </footer>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
